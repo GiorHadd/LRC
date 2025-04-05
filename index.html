@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>LRCY NR 2025 Quiz</title>
+<style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #b30000; }
+        label, p { font-weight: bold; margin-top: 20px; }
+        textarea, input[type="text"] { width: 100%; padding: 8px; margin-top: 5px; }
+        button { padding: 10px 20px; background-color: #b30000; color: white; border: none; margin-top: 20px; cursor: pointer; }
+        .page { display: none; }
+        .visible { display: block; }
+    </style>
+</head>
+<body>
+<h1>Lebanese Red Cross Youth – Antelias</h1>
+<h2>Entrance Exam 2025</h2>
+<p>Full Name: (1pt)</p>
+<input id="name" placeholder="Enter your full name" required="" type="text"/>
+<form id="quizForm">
+<div class="page visible" id="page1">
+<h2>Dissemination Section</h2>
+<p>1. What are the 7 Red Cross Principles? (English and Arabic) (1pt)</p>
+<textarea name="principles" rows="7"></textarea>
+<p>2. ____________________ is the founder of the Red Cross (1.5pt)</p>
+<input name="founder" type="text"/>
+<p>3. What is the reason behind the Red Cross emblem? (1pt)</p>
+<textarea name="emblem_reason" rows="3"></textarea>
+<p>4. ICRC and IFRC are abbreviations for: (1pt)</p>
+<textarea name="abbreviations" rows="2"></textarea>
+<p>5. What is the main difference between ICRC and IFRC? (1pt)</p>
+<textarea name="icrc_ifrc_diff" rows="3"></textarea>
+<p>6. Which is NOT an emblem for the organization? (1pt)</p>
+<input name="not_emblem" type="radio" value="Red Cross"/> Red Cross<br/>
+<input name="not_emblem" type="radio" value="Red Diamond"/> Red Diamond<br/>
+<input name="not_emblem" type="radio" value="Red Crescent"/> Red Crescent<br/>
+<input name="not_emblem" type="radio" value="Red Crystal"/> Red Crystal<br/>
+<p>7. The International Red Cross and Red Crescent Movement headquarters are in: (1pt)</p>
+<input name="movement_hq" type="radio" value="Roma"/> Roma<br/>
+<input name="movement_hq" type="radio" value="Geneva"/> Geneva<br/>
+<input name="movement_hq" type="radio" value="Dublin"/> Dublin<br/>
+<input name="movement_hq" type="radio" value="Prague"/> Prague<br/>
+<input name="movement_hq" type="radio" value="None of the above"/> None of the above<br/>
+<p>8. The Lebanese Red Cross was established in: (1pt)</p>
+<input name="lrc_established" type="radio" value="1935"/> 1935<br/>
+<input name="lrc_established" type="radio" value="1940"/> 1940<br/>
+<input name="lrc_established" type="radio" value="1945"/> 1945<br/>
+<input name="lrc_established" type="radio" value="1950"/> 1950<br/>
+<p>9. The Lebanese Red Cross headquarters are in: (1pt)</p>
+<input name="lrc_hq" type="radio" value="Spears"/> Spears<br/>
+<input name="lrc_hq" type="radio" value="Ashrafieh"/> Ashrafieh<br/>
+<input name="lrc_hq" type="radio" value="Al Nahar"/> Al Nahar<br/>
+<input name="lrc_hq" type="radio" value="New Rawda"/> New Rawda<br/>
+<p>10. Name the Lebanese Red Cross President, Secretary General respectively: (1pt)</p>
+<textarea name="president_secretary" rows="2"></textarea>
+<p>11. The Lebanese Red Cross Youth Sector Director is: (1pt)</p>
+<input name="youth_director" type="radio" value="Rene Mrad"/> Rene Mrad<br/>
+<input name="youth_director" type="radio" value="Miriana Bader"/> Miriana Bader<br/>
+<input name="youth_director" type="radio" value="Miriana Kostantin"/> Miriana Kostantin<br/>
+<input name="youth_director" type="radio" value="Maysoon Jamal"/> Maysoon Jamal<br/>
+<p>12. There is _____ Youth Center in the NML district. (1pt)</p>
+<input name="youth_centers_number" type="text"/>
+<p>13. Name the Youth Centers in the NML district: (1pt)</p>
+<textarea name="youth_centers_names" rows="2"></textarea>
+<p>14. A Lebanese Red Cross Youth Sector Head of Center has how many stripes on the uniform? (1pt)</p>
+<input name="stripes" type="radio" value="1"/> 1<br/>
+<input name="stripes" type="radio" value="2"/> 2<br/>
+<input name="stripes" type="radio" value="3"/> 3<br/>
+<input name="stripes" type="radio" value="4"/> 4<br/>
+<input name="stripes" type="radio" value="5"/> 5<br/>
+<input name="stripes" type="radio" value="No stripes"/> No stripes<br/>
+<p>15. What is the main difference between a Youth Center and Club? (1pt)</p>
+<textarea name="center_vs_club" rows="3"></textarea>
+<div style="margin-top: 20px;">
+<button onclick="nextPage()" type="button">Next</button>
+</div>
+</div>
+<div class="page" id="page2">
+<h2>Induction Section</h2>
+<p>1. Number in the correct order the communication process:<br/>___ Channel<br/>___ Feedback<br/>___ Source<br/>___ Encoding<br/>___ Receiver<br/>___ Decoding</p>
+<textarea name="communication_process" rows="4"></textarea>
+<p>2. The 2 types of motivators are: (1pt)</p>
+<textarea name="motivators" rows="2"></textarea>
+<p>3) List the 4 parts of the Priority Matrix: (1pt)</p>
+<textarea name="priority_matrix" rows="4"></textarea>
+<p>4. The stages of team building in the correct order are: (1pt)</p>
+<input name="team_building" type="radio" value="Forming, Norming, Storming, Performing and Adjourning"/> Forming, Norming, Storming, Performing and Adjourning<br/>
+<input name="team_building" type="radio" value="Forming, Storming, Performing, Norming and Adjourning"/> Forming, Storming, Performing, Norming and Adjourning<br/>
+<input name="team_building" type="radio" value="Forming, Norming, Performing, Storming and Adjourning"/> Forming, Norming, Performing, Storming and Adjourning<br/>
+<input name="team_building" type="radio" value="Forming, Storming, Norming, Performing and Adjourning"/> Forming, Storming, Norming, Performing and Adjourning<br/>
+<p>5. Feedback is effective if it is clearly __________, __________, and accepted: (1pt)</p>
+<input name="feedback_effective" type="text"/>
+<p>6. Reaction to feedback consists of: (1pt)</p>
+<input name="reaction_feedback" type="radio" value="SBI"/> SBI<br/>
+<input name="reaction_feedback" type="radio" value="SARA"/> SARA<br/>
+<input name="reaction_feedback" type="radio" value="SMART"/> SMART<br/>
+<input name="reaction_feedback" type="radio" value="LIRA"/> LIRA<br/>
+<p>7. SMART objectives stands for: (1.25pt)</p>
+<textarea name="smart_objectives" placeholder="- S
+- M
+- A
+- R
+- T" rows="5"></textarea>
+<p>8. Name 5 components of an Activity Proposal: (1pt)</p>
+<textarea name="activity_proposal" rows="4"></textarea>
+<p>9. Why and How are questions for which process: (1pt)</p>
+<input name="why_how_process" type="radio" value="Evaluating"/> Evaluating<br/>
+<input name="why_how_process" type="radio" value="Monitoring"/> Monitoring<br/>
+<input name="why_how_process" type="radio" value="Reporting"/> Reporting<br/>
+<input name="why_how_process" type="radio" value="Planning"/> Planning<br/>
+<div style="margin-top: 20px;">
+<button onclick="prevPage()" type="button">Back</button>
+<button onclick="nextPage()" type="button">Next</button>
+</div>
+</div>
+<div class="page" id="pageFinal">
+<h2>Final Step</h2>
+<p>Click the button below to save your responses locally. (1pt)</p>
+<button onclick="saveAnswers()" type="button">Submit &amp; Save</button>
+</div>
+</form>
+<div class="page" id="page3">
+<h2>Psychosocial Support (PSS) Section</h2>
+<p>1. The biological and physical differences between females and males is known as: (1pt)</p>
+<input name="pss_q1" type="text"/>
+<p>2. The characteristics of women, men, girls, and boys that are socially constructed based on age, religion, ethnicity, etc. is known as: (1pt)</p>
+<input name="pss_q2" type="text"/>
+<p>3. What is the definition of violence? (1pt)</p>
+<input name="pss_q3" type="radio" value="a"/> a) Use of force (or threat of force) against another person.<br/>
+<input name="pss_q3" type="radio" value="b"/> b) Use violence as a means of controlling and wielding power over someone<br/>
+<input name="pss_q3" type="radio" value="c"/> c) Violence is any act that harms others<br/>
+<input name="pss_q3" type="radio" value="d"/> d) Violence comes in many forms<br/>
+<input name="pss_q3" type="radio" value="e"/> e) All of the above<br/>
+<input name="pss_q3" type="radio" value="f"/> f) None of the above<br/>
+<p>4. Which of these are not true? (1pt)</p>
+<input name="pss_q4" type="radio" value="a"/> a) GBV is a term used for any harmful act...<br/>
+<input name="pss_q4" type="radio" value="b"/> b) GBV does not include threats or coercion...<br/>
+<input name="pss_q4" type="radio" value="c"/> c) Both men and women are affected by gender-based violence.<br/>
+<p>5. Types of Violence: (1pt)</p>
+<input name="pss_q5" type="radio" value="a"/> a) Sexual violence<br/>
+<input name="pss_q5" type="radio" value="b"/> b) Emotional/psychological violence<br/>
+<input name="pss_q5" type="radio" value="c"/> c) Physical violence<br/>
+<input name="pss_q5" type="radio" value="d"/> d) Deprivation<br/>
+<input name="pss_q5" type="radio" value="e"/> e) All of the above<br/>
+<input name="pss_q5" type="radio" value="f"/> f) None of the above<br/>
+<p>6. What are the 3 basic elements of Informed consent: (1pt)</p>
+<textarea name="pss_q6" rows="3"></textarea>
+<p>7. Pick the choice that best describes where Gender-Based Violence occurs: (1pt)</p>
+<input name="pss_q7" type="radio" value="a"/> a) Occurs in private only<br/>
+<input name="pss_q7" type="radio" value="b"/> b) Only occurs in households and workplaces<br/>
+<input name="pss_q7" type="radio" value="c"/> c) Can occur anywhere, even in populated/public areas<br/>
+<p>8. Who causes Gender-Based Violence: (1pt)</p>
+<input name="pss_q8" type="radio" value="a"/> a) The perpetrators are only men<br/>
+<input name="pss_q8" type="radio" value="b"/> b) The perpetrators are only women<br/>
+<input name="pss_q8" type="radio" value="c"/> c) The perpetrators can be anyone, including strangers<br/>
+<input name="pss_q8" type="radio" value="d"/> d) The perpetrators can be anyone we know<br/>
+<p>9. True or False: Everyone can be subjected to gender-based violence. No diverse group are more at risk. (1pt)</p>
+<input name="pss_q9" type="radio" value="True"/> True<br/>
+<input name="pss_q9" type="radio" value="False"/> False<br/>
+<p>10. In case of GBV disclosure, which of the following should we NOT do? (check all that apply) (1pt)</p>
+<input name="pss_q10" type="checkbox" value="a"/> a) Thank the person for trusting us<br/>
+<input name="pss_q10" type="checkbox" value="b"/> b) Maintain confidentiality and privacy<br/>
+<input name="pss_q10" type="checkbox" value="c"/> c) Make promises<br/>
+<input name="pss_q10" type="checkbox" value="d"/> d) Judge the person while listening to them<br/>
+<input name="pss_q10" type="checkbox" value="e"/> e) Refer the individual to an organization<br/>
+<input name="pss_q10" type="checkbox" value="f"/> f) Assume that you know better what are their needs<br/>
+<input name="pss_q10" type="checkbox" value="g"/> g) Disclose with the members of the center<br/>
+<input name="pss_q10" type="checkbox" value="h"/> h) Do not discriminate<br/>
+<p>11. What is the main goal of assistive coping? (1pt)</p>
+<input name="pss_q11" type="radio" value="a"/> a) Giving people money for a long time after a crisis<br/>
+<input name="pss_q11" type="radio" value="b"/> b) Helping people use their own strengths...<br/>
+<input name="pss_q11" type="radio" value="c"/> c) Forcing people to stop bad habits...<br/>
+<input name="pss_q11" type="radio" value="d"/> d) Making people depend on outside help<br/>
+<p>12. State whether the following points are psychological, social, or material losses: (1pt)</p>
+<p>12. State whether the following points are psychological, social, or material losses: (7pts) (1pt)</p>
+<table border="1" style="width:100%; border-collapse: collapse;">
+<tr>
+<th>Loss</th>
+<th>Psychological</th>
+<th>Social</th>
+<th>Material</th>
+</tr>
+<tr><td>Job loss</td><td><input name="q12_job_psy" type="checkbox"/></td><td><input name="q12_job_soc" type="checkbox"/></td><td><input name="q12_job_mat" type="checkbox"/></td></tr>
+<tr><td>Uncertainty about the future</td><td><input name="q12_uncertainty_psy" type="checkbox"/></td><td><input name="q12_uncertainty_soc" type="checkbox"/></td><td><input name="q12_uncertainty_mat" type="checkbox"/></td></tr>
+<tr><td>Home loss</td><td><input name="q12_home_psy" type="checkbox"/></td><td><input name="q12_home_soc" type="checkbox"/></td><td><input name="q12_home_mat" type="checkbox"/></td></tr>
+<tr><td>Sleep disturbance</td><td><input name="q12_sleep_psy" type="checkbox"/></td><td><input name="q12_sleep_soc" type="checkbox"/></td><td><input name="q12_sleep_mat" type="checkbox"/></td></tr>
+<tr><td>Loss of identity</td><td><input name="q12_identity_psy" type="checkbox"/></td><td><input name="q12_identity_soc" type="checkbox"/></td><td><input name="q12_identity_mat" type="checkbox"/></td></tr>
+<tr><td>Financial loss</td><td><input name="q12_financial_psy" type="checkbox"/></td><td><input name="q12_financial_soc" type="checkbox"/></td><td><input name="q12_financial_mat" type="checkbox"/></td></tr>
+<tr><td>Feeling unsafe</td><td><input name="q12_unsafe_psy" type="checkbox"/></td><td><input name="q12_unsafe_soc" type="checkbox"/></td><td><input name="q12_unsafe_mat" type="checkbox"/></td></tr>
+<tr><td>Community conflict</td><td><input name="q12_conflict_psy" type="checkbox"/></td><td><input name="q12_conflict_soc" type="checkbox"/></td><td><input name="q12_conflict_mat" type="checkbox"/></td></tr>
+<tr><td>Loss of friendships</td><td><input name="q12_friends_psy" type="checkbox"/></td><td><input name="q12_friends_soc" type="checkbox"/></td><td><input name="q12_friends_mat" type="checkbox"/></td></tr>
+</table>
+<p>13. How does the Lebanese Red Cross help protect children? (1pt)</p>
+<input name="pss_q13" type="radio" value="a"/> a) By creating child-friendly spaces<br/>
+<input name="pss_q13" type="radio" value="b"/> b) By adopting every child in need<br/>
+<input name="pss_q13" type="radio" value="c"/> c) By replacing parents<br/>
+<input name="pss_q13" type="radio" value="d"/> d) By building new schools<br/>
+<p>14. What is the main goal of assistive coping? (1pt)</p>
+<input name="pss_q13" type="radio" value="a"/> a) Giving people money for a long time after a crisis<br/>
+<input name="pss_q13" type="radio" value="b"/> b) Helping people use their own strengths and support to deal with problems<br/>
+<input name="pss_q13" type="radio" value="c"/> c) Forcing people to stop bad habits and follow new rules<br/>
+<input name="pss_q13" type="radio" value="d"/> d) Making people depend on outside help to recover<br/>
+<p>15. True or False: The Child Protection Code of Conduct helps protect both children and Red Cross staff and volunteers. (1pt)</p>
+<input name="pss_q14" type="radio" value="True"/> True<br/>
+<input name="pss_q14" type="radio" value="False"/> False<br/>
+<div style="margin-top: 20px;">
+<button onclick="prevPage()" type="button">Back</button>
+<button onclick="nextPage()" type="button">Next</button>
+</div>
+</div>
+<div class="page" id="page4">
+<h2>Programs Section</h2>
+<p>1) What does SCP stand for? (1pt)</p>
+<input name="programs_q1" type="text"/>
+<p>2) Name the 5 phases of SCP: (1pt)</p>
+<p>- Phase A: <input name="programs_q2a" type="text"/></p>
+<p>- Phase B: <input name="programs_q2b" type="text"/></p>
+<p>- Phase C: <input name="programs_q2c" type="text"/></p>
+<p>- Phase D: <input name="programs_q2d" type="text"/></p>
+<p>- Phase E: <input name="programs_q2e" type="text"/></p>
+<p>3) Greenhouse gases are produced by: (1pt)</p>
+<input name="programs_q3" type="radio" value="a"/> a) Agriculture waste<br/>
+<input name="programs_q3" type="radio" value="b"/> b) Fires<br/>
+<input name="programs_q3" type="radio" value="c"/> c) Polluted water<br/>
+<input name="programs_q3" type="radio" value="d"/> d) A &amp; B<br/>
+<input name="programs_q3" type="radio" value="e"/> e) B &amp; C<br/>
+<p>4) What do we do in the Environment Program other than SCP? (1pt)</p>
+<input name="programs_q4" type="radio" value="f"/> f) Renovations<br/>
+<input name="programs_q4" type="radio" value="g"/> g) Beach Cleanups<br/>
+<input name="programs_q4" type="radio" value="h"/> h) A &amp; B<br/>
+<input name="programs_q4" type="radio" value="i"/> i) We only do SCP...<br/>
+<p>5) How many sessions are there in the Youth and Health Manual? (1pt)</p>
+<input name="programs_q5" type="radio" value="a"/> a) 11<br/>
+<input name="programs_q5" type="radio" value="b"/> b) 14<br/>
+<input name="programs_q5" type="radio" value="c"/> c) 12<br/>
+<input name="programs_q5" type="radio" value="d"/> d) 15<br/>
+<p>6) Which of these is NOT a possible symptom of STI’s: (1pt)</p>
+<input name="programs_q6" type="radio" value="a"/> a) Blisters...<br/>
+<input name="programs_q6" type="radio" value="b"/> b) Infertility<br/>
+<input name="programs_q6" type="radio" value="c"/> c) Painful urination<br/>
+<input name="programs_q6" type="radio" value="d"/> d) Joint pain<br/>
+<input name="programs_q6" type="radio" value="e"/> e) All of the above...<br/>
+<p>7) Which of these STI’s is NOT caused by a virus: (1pt)</p>
+<input name="programs_q7" type="radio" value="a"/> a) HPV<br/>
+<input name="programs_q7" type="radio" value="b"/> b) AIDS<br/>
+<input name="programs_q7" type="radio" value="c"/> c) Syphilis<br/>
+<input name="programs_q7" type="radio" value="d"/> d) Herpes<br/>
+<p>8) The “Self esteem” is classified in the category of: (1pt)</p>
+<input name="programs_q8" type="radio" value="a"/> a) Life skills<br/>
+<input name="programs_q8" type="radio" value="b"/> b) Physical Health<br/>
+<input name="programs_q8" type="radio" value="c"/> c) Mental Health<br/>
+<input name="programs_q8" type="radio" value="d"/> d) Prevention of diseases<br/>
+<p>9) Classify the following into healthy and unhealthy coping mechanisms of stress: (1pt)</p><p>Options: Sleeping, Listening to music, Sports, Eating, Journaling, Going out, Alcohol consumption, Drawing, Talking to a friend, Shopping</p>
+<textarea name="programs_q9_healthy" placeholder="Healthy: ..." rows="2"></textarea>
+<textarea name="programs_q9_unhealthy" placeholder="Unhealthy: ..." rows="2"></textarea>
+<p>10) Define addiction: (1pt)</p>
+<textarea name="programs_q10" rows="2"></textarea>
+<p>11) True or False: there are only 2 types of drugs: Stimulant and Depressant (1pt)</p>
+<input name="programs_q11" type="radio" value="True"/> True<br/>
+<input name="programs_q11" type="radio" value="False"/> False<br/>
+<p>12) Explain how to perform one type of breathing technique (flower, square…) in your own words: (1pt)</p>
+<textarea name="programs_q12" rows="3"></textarea>
+<p>13) List the 4 parts of the communication cycle: (1pt)</p>
+<img alt="Communication cycle diagram" src="image.png" width="300"/><br/>
+<textarea name="programs_q13" rows="2"></textarea>
+<p>14) What Does IHL stand for? (1pt)</p>
+<input name="programs_q14" type="text"/>
+<p>15) What is the main purpose of IHL? (1pt)</p>
+<input name="programs_q15" type="radio" value="a"/> a) To stop all wars...<br/>
+<input name="programs_q15" type="radio" value="b"/> b) To set rules...<br/>
+<input name="programs_q15" type="radio" value="c"/> c) To judge criminals...<br/>
+<input name="programs_q15" type="radio" value="d"/> d) To support political leaders<br/>
+<p>16) What are the Geneva Conventions? (1pt)</p>
+<input name="programs_q16" type="radio" value="a"/> a) A series of peace treaties<br/>
+<input name="programs_q16" type="radio" value="b"/> b) A set of agreements...<br/>
+<input name="programs_q16" type="radio" value="c"/> c) The name of a Red Cross event<br/>
+<input name="programs_q16" type="radio" value="d"/> d) International trade rules<br/>
+<p>17) What is the main difference between the HVP Program and the Youth and Health Program? (1pt)</p>
+<input name="programs_q17" type="radio" value="a"/> a) HVP focuses on values...<br/>
+<input name="programs_q17" type="radio" value="b"/> b) HVP only during emergencies<br/>
+<input name="programs_q17" type="radio" value="c"/> c) Youth &amp; Health uses facts<br/>
+<input name="programs_q17" type="radio" value="d"/> d) No structured curriculum...<br/>
+<p>18) The HVP Program was created mainly to: (1pt)</p>
+<input name="programs_q18" type="radio" value="a"/> a) Educate youth about health...<br/>
+<input name="programs_q18" type="radio" value="b"/> b) Promote humanitarian values...<br/>
+<input name="programs_q18" type="radio" value="c"/> c) Provide technical training...<br/>
+<input name="programs_q18" type="radio" value="d"/> d) Support youth engagement...<br/>
+<p>19) Which of the following is NOT a key value in YABC? (1pt)</p>
+<input name="programs_q19" type="radio" value="a"/> a) Empathy<br/>
+<input name="programs_q19" type="radio" value="b"/> b) Active listening<br/>
+<input name="programs_q19" type="radio" value="c"/> c) Team competition<br/>
+<input name="programs_q19" type="radio" value="d"/> d) Social inclusion<br/>
+<p>20) PiF activities are mainly designed for which age group? (1pt)</p>
+<input name="programs_q20" type="radio" value="a"/> a) Children (6–12)<br/>
+<input name="programs_q20" type="radio" value="b"/> b) Teenagers (13–17)<br/>
+<input name="programs_q20" type="radio" value="c"/> c) University students<br/>
+<input name="programs_q20" type="radio" value="d"/> d) Adult volunteers only<br/>
+<div style="margin-top: 20px;">
+<button onclick="prevPage()" type="button">Back</button>
+<button onclick="nextPage()" type="button">Next</button>
+</div>
+</div>
+<div class="page" id="page5">
+<h2>Surge Section</h2>
+<p>1) Name the 4 main phases of the Disaster Management Cycle (1pt)</p>
+<p>Phase 1: <input name="surge_phase1" type="text"/></p>
+<p>Phase 2: <input name="surge_phase2" type="text"/></p>
+<p>Phase 3: <input name="surge_phase3" type="text"/></p>
+<p>Phase 4: <input name="surge_phase4" type="text"/></p>
+<p>2) Which of the following is part of the “Preparedness” phase in the DM Cycle? (1pt)</p>
+<input name="surge_q2" type="radio" value="a"/> a) Distributing aid after a flood<br/>
+<input name="surge_q2" type="radio" value="b"/> b) Training volunteers and conducting drills<br/>
+<input name="surge_q2" type="radio" value="c"/> c) Cleaning debris after a disaster<br/>
+<input name="surge_q2" type="radio" value="d"/> d) Rebuilding infrastructure<br/>
+<p>3) Which phase comes right after the emergency occurs? (1pt)</p>
+<input name="surge_q3" type="radio" value="a"/> a) Mitigation<br/>
+<input name="surge_q3" type="radio" value="b"/> b) Preparedness<br/>
+<input name="surge_q3" type="radio" value="c"/> c) Response<br/>
+<input name="surge_q3" type="radio" value="d"/> d) Recovery<br/>
+<p>4) Match each response phase to its time frame: (0.75pt)</p>
+<ul>
+<li>Up to 72 hours</li>
+<li>Between 72 hours and 6 weeks</li>
+<li>After 6 weeks</li>
+</ul>
+<p>
+    Immediate Response: <input name="surge_q4_immediate" type="text"/><br/>
+    Post-Acute Response: <input name="surge_q4_postacute" type="text"/><br/>
+    Acute Response: <input name="surge_q4_acute" type="text"/>
+</p>
+<p>5) Which of the following is a key task in the “Calling Area” during distribution? (1pt)</p>
+<input name="surge_q5" type="radio" value="a"/> a) Filling boxes with items<br/>
+<input name="surge_q5" type="radio" value="b"/> b) Making assessments<br/>
+<input name="surge_q5" type="radio" value="c"/> c) Calling beneficiaries by name or coupon number<br/>
+<input name="surge_q5" type="radio" value="d"/> d) Verifying hygiene items<br/>
+<p>6) Which of the following is NOT typically considered a core sector in the immediate disaster response phase? (1pt)</p>
+<input name="surge_q6" type="radio" value="a"/> a) Shelter<br/>
+<input name="surge_q6" type="radio" value="b"/> b) WASH (Water, Sanitation, and Hygiene)<br/>
+<input name="surge_q6" type="radio" value="c"/> c) Education<br/>
+<input name="surge_q6" type="radio" value="d"/> d) Health<br/>
+<p>7) Why is crowd management important during the distribution process? (1pt)</p>
+<input name="surge_q7" type="radio" value="a"/> a) To avoid running out of supplies<br/>
+<input name="surge_q7" type="radio" value="b"/> b) To allow faster media coverage<br/>
+<input name="surge_q7" type="radio" value="c"/> c) To ensure safety, fairness, and order<br/>
+<input name="surge_q7" type="radio" value="d"/> d) To prevent volunteers from getting bored<br/>
+<p>8) Match each response phase with who is in command during that phase: (0.75pt)</p>
+<ul>
+<li>A. Operations / USG Ops</li>
+<li>B. Crisis Command Cell</li>
+</ul>
+<p>
+    1. Immediate: <input name="surge_q8_immediate" type="text"/><br/>
+    2. Acute: <input name="surge_q8_acute" type="text"/><br/>
+    3. Post-Acute: <input name="surge_q8_postacute" type="text"/>
+</p>
+<p>9) Name 3 assessment tools and explain the abbreviation: (1.5pt)</p>
+<textarea name="surge_q9" rows="3"></textarea>
+<p>10) Name 4 things that need to be included in the distribution list: (1pt)</p>
+<textarea name="surge_q10" rows="2"></textarea>
+<div style="margin-top: 20px;">
+<button onclick="prevPage()" type="button">Back</button>
+<button onclick="nextPage()" type="button">Next</button>
+</div>
+</div>
+<div class="page" id="page6">
+<h2>Mines Section (5pts)</h2>
+<p>1) Which of the following is NOT a natural cause for mines explosion? (1pt)</p>
+<input name="mines_q1" type="radio" value="a"/> a) Water<br/>
+<input name="mines_q1" type="radio" value="b"/> b) Cold weather<br/>
+<input name="mines_q1" type="radio" value="c"/> c) Greenhouse effect<br/>
+<input name="mines_q1" type="radio" value="d"/> d) Hot weather<br/>
+<p>2) List the 4 steps in order to detonate a mine: (2pts)</p>
+<textarea name="mines_q2" rows="3"></textarea>
+<p>3) Define non-explosive mines: (1pt)</p>
+<textarea name="mines_q3" rows="2"></textarea>
+<p>4) What is the appropriate number to call if a mine is found? (1pt)</p>
+<input name="mines_q4" type="text"/>
+<div style="margin-top: 20px;">
+<button onclick="prevPage()" type="button">Back</button>
+<button onclick="nextPage()" type="button">Next</button>
+</div>
+</div>
+<div class="page" id="page7">
+<h2>Miscellaneous Section (14pts)</h2>
+<p>1) State the internal committees in the center and name their respective heads (2.5pts)</p>
+<textarea name="misc_q1" rows="3"></textarea>
+<p>2) Describe the role of each executive committee member (2.5pts)</p>
+<textarea name="misc_q2" rows="3"></textarea>
+<p>3) Name the trainers you had along with the training title (2.5pts)</p>
+<textarea name="misc_q3" rows="3"></textarea>
+<p>4) Name 5 Youth Led activities and explain their purpose (2.5pts)</p>
+<textarea name="misc_q4" rows="3"></textarea>
+<p>5) What comes next in the sequence (1pt)? 2, 6, 12, 20, 30, ?</p>
+<input name="misc_q5" type="radio" value="a"/> a) 38<br/>
+<input name="misc_q5" type="radio" value="b"/> b) 40<br/>
+<input name="misc_q5" type="radio" value="c"/> c) 42<br/>
+<input name="misc_q5" type="radio" value="d"/> d) 44<br/>
+<p>6) Circle the odd one out: (1pt)</p>
+<input name="misc_q6" placeholder="Apple, Banana, Carrot, Mango, Pineapple" type="text"/>
+<p>7) John’s father has three sons: Snap, Crackle, and ? (1pt)</p>
+<input name="misc_q7" type="radio" value="a"/> a) Pop<br/>
+<input name="misc_q7" type="radio" value="b"/> b) John<br/>
+<input name="misc_q7" type="radio" value="c"/> c) Rice<br/>
+<input name="misc_q7" type="radio" value="d"/> d) Boom<br/>
+<p>8) A bat and a ball cost 1.10$ in total. The bat costs 1.00$ more than the ball. How much does the ball cost? (1pt)</p>
+<input name="misc_q8" type="text"/>
+<div style="margin-top: 20px;">
+<button onclick="prevPage()" type="button">Back</button>
+<button onclick="nextPage()" type="button">Next</button>
+</div>
+</div>
+<div class="page" id="page8">
+<h2>Bonus Section (5pts)</h2>
+<p>1) List the official attire criteria (2.5pts)</p>
+<textarea name="bonus_q1" rows="3"></textarea>
+<p>2) Name the types of quete (2.5pts)</p>
+<textarea name="bonus_q2" rows="3"></textarea>
+<div style="margin-top: 20px;">
+<button onclick="prevPage()" type="button">Back</button>
+<button onclick="saveAnswers()" type="button">Submit &amp; Save</button>
+</div>
+</div>
+<script>
+let currentPage = 1;
+const totalPages = 9;
+
+function showPage(n) {
+    for (let i = 1; i <= totalPages; i++) {
+        const page = document.getElementById("page" + i);
+        if (page) {
+            page.classList.remove("visible");
+        }
+    }
+    const current = document.getElementById("page" + n);
+    if (current) current.classList.add("visible");
+    currentPage = n;
+}
+
+function nextPage() {
+    if (currentPage < totalPages) {
+        showPage(currentPage + 1);
+    }
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        showPage(currentPage - 1);
+    }
+}
+
+
+function saveAnswers() {
+    const nameField = document.getElementById("name");
+    const name = nameField.value.trim().replace(/\s+/g, '');
+    if (!name) {
+        alert("Please enter your full name.");
+        nameField.focus();
+        return;
+    }
+
+    let output = `LRCY NR 2025 Quiz\nName: ${name}\n\n`;
+    const added = new Set();
+
+    const elements = document.querySelectorAll("input, textarea, select");
+
+    elements.forEach(el => {
+        const key = el.name;
+        if (!key || added.has(key)) return;
+        added.add(key);
+        const type = el.type;
+        let value = "";
+
+        if (type === "radio") {
+            const checked = document.querySelector(`input[name="${key}"]:checked`);
+            if (checked) {
+                value = checked.value;
+            }
+        } else if (type === "checkbox") {
+            const checkboxes = document.querySelectorAll(`input[name="${key}"]:checked`);
+            value = Array.from(checkboxes).map(cb => cb.value).join(", ");
+        } else {
+            value = el.value;
+        }
+
+        if (value) {
+            const title = {
+                "founder": "3) 2. ____________________ is the founder of the Red Cross (1.5pt)", "not_emblem": "7) 6. Which is NOT an emblem for the organization? (1pt)", "movement_hq": "8) 7. The International Red Cross and Red Crescent Movement headquarters are in: (1pt)", "lrc_established": "9) 8. The Lebanese Red Cross was established in: (1pt)", "lrc_hq": "10) 9. The Lebanese Red Cross headquarters are in: (1pt)", "youth_director": "12) 11. The Lebanese Red Cross Youth Sector Director is: (1pt)", "youth_centers_number": "13) 12. There is _____ Youth Center in the NML district. (1pt)", "stripes": "15) 14. A Lebanese Red Cross Youth Sector Head of Center has how many stripes on the uniform? (1pt)", "team_building": "20) 4. The stages of team building in the correct order are: (1pt)", "feedback_effective": "21) 5. Feedback is effective if it is clearly __________, __________, and accepted: (1pt)", "reaction_feedback": "22) 6. Reaction to feedback consists of: (1pt)", "why_how_process": "25) 9. Why and How are questions for which process: (1pt)", "pss_q1": "27) 1. The biological and physical differences between females and males is known as: (1pt)", "pss_q2": "28) 2. The characteristics of women, men, girls, and boys that are socially constructed based on age, religion, ethnicity, etc. is known as: (1pt)", "pss_q3": "29) 3. What is the definition of violence? (1pt)", "pss_q4": "30) 4. Which of these are not true? (1pt)", "pss_q5": "31) 5. Types of Violence: (1pt)", "pss_q7": "33) 7. Pick the choice that best describes where Gender-Based Violence occurs: (1pt)", "pss_q8": "34) 8. Who causes Gender-Based Violence: (1pt)", "pss_q9": "35) 9. True or False: Everyone can be subjected to gender-based violence. No diverse group are more at risk. (1pt)", "pss_q10": "36) 10. In case of GBV disclosure, which of the following should we NOT do? (check all that apply) (1pt)", "pss_q11": "37) 11. What is the main goal of assistive coping? (1pt)", "q12_job_psy": "1) Full Name: (1pt)", "q12_job_soc": "1) Full Name: (1pt)", "q12_job_mat": "1) Full Name: (1pt)", "q12_uncertainty_psy": "1) Full Name: (1pt)", "q12_uncertainty_soc": "1) Full Name: (1pt)", "q12_uncertainty_mat": "1) Full Name: (1pt)", "q12_home_psy": "1) Full Name: (1pt)", "q12_home_soc": "1) Full Name: (1pt)", "q12_home_mat": "1) Full Name: (1pt)", "q12_sleep_psy": "1) Full Name: (1pt)", "q12_sleep_soc": "1) Full Name: (1pt)", "q12_sleep_mat": "1) Full Name: (1pt)", "q12_identity_psy": "1) Full Name: (1pt)", "q12_identity_soc": "1) Full Name: (1pt)", "q12_identity_mat": "1) Full Name: (1pt)", "q12_financial_psy": "1) Full Name: (1pt)", "q12_financial_soc": "1) Full Name: (1pt)", "q12_financial_mat": "1) Full Name: (1pt)", "q12_unsafe_psy": "1) Full Name: (1pt)", "q12_unsafe_soc": "1) Full Name: (1pt)", "q12_unsafe_mat": "1) Full Name: (1pt)", "q12_conflict_psy": "1) Full Name: (1pt)", "q12_conflict_soc": "1) Full Name: (1pt)", "q12_conflict_mat": "1) Full Name: (1pt)", "q12_friends_psy": "1) Full Name: (1pt)", "q12_friends_soc": "1) Full Name: (1pt)", "q12_friends_mat": "1) Full Name: (1pt)", "pss_q13": "41) 13. What is the main goal of assistive coping? (1pt)", "pss_q14": "42) 14. True or False: The Child Protection Code of Conduct helps protect both children and Red Cross staff and volunteers. (1pt)", "principles": "2) 1. What are the 7 Red Cross Principles? (English and Arabic) (1pt)", "emblem_reason": "4) 3. What is the reason behind the Red Cross emblem? (1pt)", "abbreviations": "5) 4. ICRC and IFRC are abbreviations for: (1pt)", "icrc_ifrc_diff": "6) 5. What is the main difference between ICRC and IFRC? (1pt)", "president_secretary": "11) 10. Name the Lebanese Red Cross President, Secretary General respectively: (1pt)", "youth_centers_names": "14) 13. Name the Youth Centers in the NML district: (1pt)", "center_vs_club": "16) 15. What is the main difference between a Youth Center and Club? (1pt)", "communication_process": "17) 1. Number in the correct order the communication process:___ Channel___ Feedback___ Source___ Encoding___ Receiver___ Decoding", "motivators": "18) 2. The 2 types of motivators are: (1pt)", "priority_matrix": "19) 3. Draw the priority matrix (describe it): (1pt)", "smart_objectives": "23) 7. SMART objectives stands for: (1.25pt)", "activity_proposal": "24) 8. Name 5 components of an Activity Proposal: (1pt)", "pss_q6": "32) 6. What are the 3 basic elements of Informed consent: (1pt)"
+            }[key] || key;
+            output += `${title}\nAnswer: ${value}\n\n`;
+        }
+    });
+
+    const blob = new Blob([output], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `${name}_NR_Quiz_2025.txt`;
+    link.click();
+}
+</script>
+</body>
+</html>
